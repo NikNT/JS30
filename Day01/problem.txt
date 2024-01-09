@@ -1,0 +1,10 @@
+Level: Beginner
+
+Challenge: 
+Create a basic webpage that changes its background color when a button is clicked. Use JavaScript to manipulate the DOM.
+
+Colors:
+ Roseda Green : 758467
+ Olivine : 9CAF88
+ Ash Gray : CBD5C0
+ Alabaster : DFE6DA
