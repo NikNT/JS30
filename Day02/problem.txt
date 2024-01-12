@@ -1,0 +1,6 @@
+DAY 2 🚀
+
+Level: Intermediate 🕵️‍♀️
+
+Challenge: 👨‍🏫
+Develop a digital clock that displays the current time on a webpage, updating every second.
