@@ -1,0 +1,6 @@
+Day 4 🚀
+
+Level: Beginner
+
+Challenge:
+Develop a webpage with a light/dark mode toggle feature.
