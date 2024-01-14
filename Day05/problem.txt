@@ -1,0 +1,22 @@
+Day 5 
+
+Level: Intermediate
+
+Challenge:
+Create a dynamic photo gallery where images are displayed in a grid layout. Clicking on an image opens it in a modal view (a popup overlay), with options to navigate to the next or previous image in the gallery.
+
+Requirements:
+Dynamic Image Loading: Use JavaScript to dynamically load images into the gallery. You can use a static array of image URLs or fetch them from an external API.
+
+Grid Layout: Display these images in a grid layout on the webpage using CSS.
+
+Modal View: When a user clicks on any image, it should open in a modal view. The modal view should include:
+
+The clicked image displayed larger.
+A close button to exit the modal view.
+Left and right navigation buttons to move to the previous or next image in the gallery.
+Keyboard Navigation: Allow users to navigate through images in the modal view using the left and right arrow keys on the keyboard.
+
+Responsive Design: Ensure the gallery is responsive and works well on different screen sizes.
+
+Bonus (Optional): Add a transition effect when moving between images in the modal view.
