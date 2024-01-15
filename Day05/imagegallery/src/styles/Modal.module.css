@@ -1,0 +1,13 @@
+.modalContainer {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContainer img {
+  height: 367px;
+  width: 500px;
+}
