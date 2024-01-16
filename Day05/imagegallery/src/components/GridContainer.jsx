@@ -6,19 +6,36 @@ import Modal from "./Modal";
 const GridContainer = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(1);
   const openImage = (photo) => {
     setModalOpen(!modalOpen);
-    setSelectedPhoto(photo);
+    // setSelectedPhoto(photo);
   };
 
   const closeImage = () => {
     setModalOpen(false);
-    setSelectedPhoto(null);
+    // setSelectedPhoto(null);
+  };
+
+  const nextPhoto = () => {
+    setCurrentIndex((prev) => prev + (1 % photos.length));
+  };
+
+  const prevPhoto = () => {
+    setCurrentIndex((prev) => prev + (1 % photos.length));
   };
 
   return (
     <>
-      {modalOpen && <Modal photo={selectedPhoto} closeImage={closeImage} />}
+      {modalOpen && (
+        <Modal
+          photos={photos}
+          closeImage={closeImage}
+          nextPhoto={nextPhoto}
+          prevPhoto={prevPhoto}
+          currentIndex={currentIndex}
+        />
+      )}
       <div className={styles.gridContainer}>
         {photos.map((photo) => (
           <div className={styles.gridItem} key={photo.id}>
