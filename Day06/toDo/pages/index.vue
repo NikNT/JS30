@@ -1,20 +1,16 @@
 <template>
   <div>
-    <AddTask />
-    <DisplayTask />
+    <Create />
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import AddTask from '~/components/AddTask.vue'
-import DisplayTask from '~/components/DisplayTask.vue'
-
+import Create from '~/components/Create.vue'
 @Component({
   components: {
-    AddTask,
-    DisplayTask,
+    Create,
   },
 })
-export default class App extends Vue {}
+export default class Index extends Vue {}
 </script>
