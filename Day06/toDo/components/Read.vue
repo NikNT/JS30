@@ -1,8 +1,12 @@
 <template>
   <div>
+    <h1>All Tasks</h1>
     <ul>
       <li v-for="task in tasks" :key="task.id">
         {{ task.task }}
+        <Delete :id="task.id" />
+        <Update :task="task" />
+        <hr />
       </li>
     </ul>
   </div>
@@ -11,11 +15,18 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 import axios from 'axios'
+import Delete from './Delete.vue'
+import Update from './Update.vue'
 interface Task {
   id: number
   task: string
 }
-@Component
+@Component({
+  components: {
+    Delete,
+    Update,
+  },
+})
 export default class Read extends Vue {
   tasks: Task[] = []
   async getTasks() {
